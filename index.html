@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Procedural Tools — Houdini HDK, Unreal Engine, C++, Python. Technical art and spatial algorithms by Hakeem Adam.">
+    <title>Procedural Tools — Hakeem Adam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Procedural Tools</h1>
+        <p class="subtitle">Technical Art + Spatial Algorithms — <a href="https://hakeemadam.info">Hakeem Adam</a></p>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hdk">HDK</button>
+        <button class="filter-btn" data-filter="houdini">Houdini</button>
+        <button class="filter-btn" data-filter="unreal">Unreal</button>
+        <button class="filter-btn" data-filter="godot">Godot</button>
+        <button class="filter-btn" data-filter="cpp">C++</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="algorithm">Algorithm</button>
+    </div>
+
+    <div class="projects">
+
+        <!-- =====================================================
+             PROJECT LOOKING GLASS
+        ====================================================== -->
+        <article class="project" data-tags="godot python houdini">
+            <div class="project-main">
+                <h2 class="project-title">Project Looking Glass</h2>
+                <p class="project-desc">Houdini project launcher with SQLite database, categories, search. Built with Godot + Python.</p>
+                <div class="project-tags">
+                    <span class="tag">Godot</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">SQLite</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/ProjectLookingGlassInstaller">GitHub ↗</a>
+                <a href="https://hakeemadam.info/procedural-tools#project-looking-glass">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="godot cpp">
+            <div class="project-main">
+                <h2 class="project-title">An Escape — Interactive Sound</h2>
+                <p class="project-desc">Euclidean sequencers with free play interface. Godot + Pure Data via Libpd.</p>
+                <div class="project-tags">
+                    <span class="tag">Godot</span>
+                    <span class="tag">Pure Data</span>
+                    <span class="tag">Audio</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/an-escape">GitHub ↗</a>
+                <a href="https://hakeemadam.info/algorithms-and-applications#an-escape">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="cpp algorithm">
+            <div class="project-main">
+                <h2 class="project-title">L-System Playground</h2>
+                <p class="project-desc">Interactive L-system generator with animation modes. Raylib + ImGui.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">raylib</span>
+                    <span class="tag">Procedural</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam">GitHub ↗</a>
+                <a href="https://hakeemadam.info/algorithms-and-applications#designing-an-l-system-playground">Details →</a>
+            </div>
+        </article>
+
+        <!-- =====================================================
+             HDK / C++ NODES
+        ====================================================== -->
+        <article class="project" data-tags="hdk cpp algorithm houdini">
+            <div class="project-main">
+                <h2 class="project-title">Convex Hull SOP</h2>
+                <p class="project-desc">Graham scan convex hull for 2D point clouds. HDK node with viewport update handling.</p>
+                <div class="project-tags">
+                    <span class="tag">HDK</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Algorithm</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/2DConvexHull">GitHub ↗</a>
+                <a href="https://hakeemadam.info/procedural-tools#extending-houdini-with-c">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="hdk cpp algorithm houdini">
+            <div class="project-main">
+                <h2 class="project-title">Line Simplification SOP</h2>
+                <p class="project-desc">Visvalingam-Whyatt simplification using cumulative triangle area. Includes VEX comparison.</p>
+                <div class="project-tags">
+                    <span class="tag">HDK</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Algorithm</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/MapResample">GitHub ↗</a>
+                <a href="https://hakeemadam.info/procedural-tools#extending-houdini-with-c">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="hdk cpp houdini">
+            <div class="project-main">
+                <h2 class="project-title">Cartesian Point Grids SOP</h2>
+                <p class="project-desc">Procedural grid generation with multi-function interface. Custom Houdini data types.</p>
+                <div class="project-tags">
+                    <span class="tag">HDK</span>
+                    <span class="tag">C++</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/CartesianGridSrc">GitHub ↗</a>
+                <a href="https://hakeemadam.info/procedural-tools#extending-houdini-with-c">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="hdk cpp houdini">
+            <div class="project-main">
+                <h2 class="project-title">Simple Attribute SOP</h2>
+                <p class="project-desc">HDK starter template — adds float attributes to points. CMake build setup reference.</p>
+                <div class="project-tags">
+                    <span class="tag">HDK</span>
+                    <span class="tag">C++</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/SimpleNode">GitHub ↗</a>
+                <a href="https://hakeemadam.info/procedural-tools#extending-houdini-with-c">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="hdk cpp houdini">
+            <div class="project-main">
+                <h2 class="project-title">Simple Box SOP</h2>
+                <p class="project-desc">Parameter assignment patterns in HDK. Interface options for common Houdini params.</p>
+                <div class="project-tags">
+                    <span class="tag">HDK</span>
+                    <span class="tag">C++</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/HakeemAdam/SimpleBoxSrc">GitHub ↗</a>
+                <a href="https://hakeemadam.info/procedural-tools#extending-houdini-with-c">Details →</a>
+            </div>
+        </article>
+
+        <!-- =====================================================
+             STANDALONE ALGORITHMS (not on Squarespace yet)
+        ====================================================== -->
+        <article class="project" data-tags="cpp algorithm">
+            <div class="project-main">
+                <h2 class="project-title">Poisson Disk Sampling</h2>
+                <p class="project-desc">Bridson's algorithm for blue noise point distribution with controllable density.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Algorithm</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <!-- FILL: GitHub link if public -->
+                <a href="#">GitHub ↗</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="cpp algorithm">
+            <div class="project-main">
+                <h2 class="project-title">Lloyd's Relaxation</h2>
+                <p class="project-desc">Iterative point relaxation using Voronoi centroids for even spatial distribution.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Algorithm</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <!-- FILL: GitHub link if public -->
+                <a href="#">GitHub ↗</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="cpp algorithm">
+            <div class="project-main">
+                <h2 class="project-title">Grid Collision Detection</h2>
+                <p class="project-desc">Spatial partitioning for broad-phase collision in particle systems.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Algorithm</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <!-- FILL: GitHub link if public -->
+                <a href="#">GitHub ↗</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="cpp algorithm">
+            <div class="project-main">
+                <h2 class="project-title">3D Sound Visualizer</h2>
+                <p class="project-desc">Real-time audio visualization with raylib. FFT analysis driving procedural geometry.</p>
+                <div class="project-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">raylib</span>
+                    <span class="tag">Audio</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <!-- FILL: GitHub link when ready -->
+                <a href="#">GitHub ↗</a>
+            </div>
+        </article>
+
+        <!-- =====================================================
+             HOUDINI + UNREAL TOOLS
+        ====================================================== -->
+        <article class="project" data-tags="houdini unreal python">
+            <div class="project-main">
+                <h2 class="project-title">Procedural Biome Authoring</h2>
+                <p class="project-desc">Wave function collapse for biome simulation. Relational data models as 2D images + CSV.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-biome-authoring">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="houdini unreal python">
+            <div class="project-main">
+                <h2 class="project-title">Data-Driven Instancer</h2>
+                <p class="project-desc">UV packing for asset placement. Relational CSV tables drive categorized instancing.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#data-driven-instancing">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="houdini unreal">
+            <div class="project-main">
+                <h2 class="project-title">Sudano-Sahelian Building Generator</h2>
+                <p class="project-desc">Procedural mosque generator. Revolved curves for organic forms, instanced decals.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Procedural Geometry</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#sudano-sahelian-building-generator">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="houdini unreal">
+            <div class="project-main">
+                <h2 class="project-title">Parking Lot Generator</h2>
+                <p class="project-desc">Biome-based environment tool. Input curve defines space, instances all related assets.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Procedural Geometry</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-biome-generation-parking-lot">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="houdini unreal">
+            <div class="project-main">
+                <h2 class="project-title">Electronic Parking Gate</h2>
+                <p class="project-desc">Hard surface tool with VEX. Groups-based modeling, decal instancing patterns.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Unreal</span>
+                    <span class="tag">VEX</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-modelling-electronic-parking-gate-system">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="houdini unreal">
+            <div class="project-main">
+                <h2 class="project-title">Flower Pot Tool v2</h2>
+                <p class="project-desc">Cross-section curve revolved to form. Houdini HDA with plant placement.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Unreal</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-flower-pot-modelling-tool-v2">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="houdini">
+            <div class="project-main">
+                <h2 class="project-title">Digital Painting Pipeline</h2>
+                <p class="project-desc">3D scans to oil painting style. Copernicus COPs for color quantization + edge detection.</p>
+                <div class="project-tags">
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Copernicus</span>
+                    <span class="tag">Image Processing</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-approach-to-digital-painting">Details →</a>
+            </div>
+        </article>
+
+        <!-- =====================================================
+             GEOMETRY SCRIPT (Unreal)
+        ====================================================== -->
+        <article class="project" data-tags="unreal">
+            <div class="project-main">
+                <h2 class="project-title">Flower Pot Tool v1</h2>
+                <p class="project-desc">Geometry Script procedural modeling. Cone + boolean operations with constraints.</p>
+                <div class="project-tags">
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Geometry Script</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-flower-pot-modelling-tool">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="unreal">
+            <div class="project-main">
+                <h2 class="project-title">Signpost Tool</h2>
+                <p class="project-desc">In-editor procedural signposts. Dynamic mesh joining with variation parameters.</p>
+                <div class="project-tags">
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Geometry Script</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-signpost-tool">Details →</a>
+            </div>
+        </article>
+
+        <article class="project" data-tags="unreal">
+            <div class="project-main">
+                <h2 class="project-title">Bollards Tool</h2>
+                <p class="project-desc">Five+ bollard variations from one tool. Blueprint-driven procedural modeling.</p>
+                <div class="project-tags">
+                    <span class="tag">Unreal</span>
+                    <span class="tag">Geometry Script</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <a href="https://hakeemadam.info/procedural-tools#procedural-bollards-tool">Details →</a>
+            </div>
+        </article>
+
+        <!-- =====================================================
+             DATA PIPELINES
+        ====================================================== -->
+        <article class="project" data-tags="python houdini">
+            <div class="project-main">
+                <h2 class="project-title">F1 Telemetry Pipeline</h2>
+                <p class="project-desc">FastF1 data → binary format → Houdini visualization. Animated cars with speed coloring.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Houdini</span>
+                    <span class="tag">Data Viz</span>
+                </div>
+            </div>
+            <div class="project-links">
+                <!-- FILL: Link to relevant page or GitHub -->
+                <a href="https://hakeemadam.info/procedural-tools">Details →</a>
+            </div>
+        </article>
+
+    </div>
+
+    <footer>
+        <a href="https://hakeemadam.info">hakeemadam.info</a> · <a href="https://github.com/HakeemAdam">GitHub</a>
+    </footer>
+
+    <script>
+        const btns = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project');
+
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                btns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                projects.forEach(p => {
+                    const tags = p.dataset.tags;
+                    p.style.display = (filter === 'all' || tags.includes(filter)) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

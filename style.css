@@ -1,0 +1,182 @@
+/* Minimal tech aesthetic */
+:root {
+    --bg: #0d0d0d;
+    --text: #c0c0c0;
+    --text-dim: #666;
+    --accent: #fff;
+    --border: #222;
+    --tag-bg: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    color: var(--text-dim);
+}
+
+.subtitle a {
+    color: var(--text-dim);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-dim);
+}
+
+.subtitle a:hover {
+    color: var(--text);
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    padding: 0.4rem 0.8rem;
+    font-family: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    border-color: var(--text);
+    color: var(--accent);
+}
+
+/* Project List */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+}
+
+.project:hover {
+    background: #111;
+    margin: 0 -1rem;
+    padding: 1rem;
+}
+
+.project-main {
+    min-width: 0;
+}
+
+.project-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--accent);
+    margin-bottom: 0.25rem;
+}
+
+.project-desc {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    background: var(--tag-bg);
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.project-links a {
+    color: var(--text-dim);
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: var(--accent);
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+footer a {
+    color: var(--text-dim);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--text);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .project {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-links {
+        margin-top: 0.5rem;
+    }
+}
